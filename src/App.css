@@ -1,0 +1,125 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('./assets/background.jpg'); /* Ku beddel path-ka image-kaaga */
+  background-size: cover; /* Si image-ka loo dhigo mid buuxa */
+  background-position: center; /* Si image-ka u dhexeeyo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative; /* Si shucaac loogu daro */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Madow shucaac ah */
+  z-index: 1; /* Ugu sarreeya waxyaabaha kale */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Si form-ka uu u muuqdo sare */
+}
+
+.form-container {
+  position: relative; /* Si loogu daro foomka */
+  z-index: 2; /* Ugu hooseeya overlay */
+  padding: 20px;
+  background: white; /* Midabka foomka */
+  border-radius: 8px; /* Geesaha oo la qariyo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hooska foomka */
+  pointer-events: auto; /* Hubi in foomka la taaban karo */
+}
+
+.form-container:hover {
+  transform: scale(1.03);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #d0d0d0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.toggle-btn:hover {
+  color: #0056b3;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
