@@ -19,7 +19,7 @@ Welcome to **User Authentication**, a modern **React.js (Vite)** frontend projec
 ## 🔧 Installation & Setup
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/zackdaahir/user-auth.git
+git clone https://github.com/Zack-daahir13/User-Authentication-Master.git
 cd user-auth
 ```
 ### 2️⃣ Install Dependencies
